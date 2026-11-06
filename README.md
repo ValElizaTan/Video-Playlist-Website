@@ -1,2 +1,64 @@
-# Video Playlist Website
-Video Playlist Website (PHP + MySQL)  A video-streaming style website where users can browse videos by category, search them, create an account and build their own playlists. Built with PHP and MySQL, together with Adobe Illustrator wireframes and a page-flow diagram, as an Interactive Product Design (IPD) project at Nanyang Polytechnic.  Features Home: a grid of featured videos you can play in the browser. Search: filter the video catalogue by keyword or category (Music, Game, Cartoon). Accounts: create an account, then log in with username or email, and log out. Profile: view your profile, edit your details and upload a profile picture. My Library: see your playlists and open one to watch its videos. Playlists: create a playlist, add videos to it from the catalogue, and delete playlists. Tech stack PHP (mysqli) with MySQL / MariaDB HTML, CSS and JavaScript / jQuery (client-side form validation) Design files: Adobe Illustrator wireframes (IPD_211354T_Wireframe/) and a page-flow deck Database (videodb.sql) Table	Purpose users	User ID, email, password categories	Video categories (Music, Game, Cartoon) masterlist	Video catalogue: ID, title, video file name, category playlist	Playlists owned by users playitems	Videos inside each playlist images	Uploaded profile pictures (stored as BLOBs) Project structure index.php                 # Home / featured videos search.php                # Search & filter by category login.php, login_process.php, logout.php create_account.php, submitcreateaccount.php profile.php, profileAmend.php, updateprofile.php, upload.php mylibrary.php             # User's playlists & playlist details create_playlist.php, submitpl.php, deleteplaylist.php header.php, footer.php, dbinfo.php css/, js/, images/ videos/                   # Vid1.mp4 … Vid24.mp4 (not included, see below) videodb.sql IPD_211354T_Wireframe/    # Desktop wireframes for every page Getting started Install XAMPP or WAMP (PHP + MySQL). Copy the folder into your web root (e.g. htdocs/). Import videodb.sql into MySQL. Check dbinfo.php (defaults: localhost, user root, no password, database videodb). Add your own MP4 files to videos/ using the file names listed in the masterlist table. Open http://localhost/<folder>/index.php. Limitations Passwords are stored in plain text, and most queries are built by string concatenation, so they are vulnerable to SQL injection. These should be switched to password_hash() and prepared statements before any real use. The video files (about 120 MB, mostly third-party game and music clips) are not included in this repository. Author  Valerie Tan Wan Xin – Nanyang Polytechnic, Infocomm & Media Engineering
+# Video Playlist Website (PHP + MySQL)
+
+A video-streaming style website where users can browse videos by category, search them, create an account and build their own playlists. Built with PHP and MySQL, together with Adobe Illustrator wireframes and a page-flow diagram, as an Interactive Product Design (IPD) project at Nanyang Polytechnic.
+
+## Features
+
+- **Home:** a grid of featured videos you can play in the browser.
+- **Search:** filter the video catalogue by keyword or category (Music, Game, Cartoon).
+- **Accounts:** create an account, then log in with username or email, and log out.
+- **Profile:** view your profile, edit your details and upload a profile picture.
+- **My Library:** see your playlists and open one to watch its videos.
+- **Playlists:** create a playlist, add videos to it from the catalogue, and delete playlists.
+
+## Tech stack
+
+- PHP (mysqli) with MySQL / MariaDB
+- HTML, CSS and JavaScript / jQuery (client-side form validation)
+- Design files: Adobe Illustrator wireframes (`IPD_211354T_Wireframe/`) and a page-flow deck
+
+## Database (`videodb.sql`)
+
+| Table | Purpose |
+|-------|---------|
+| `users` | User ID, email, password |
+| `categories` | Video categories (Music, Game, Cartoon) |
+| `masterlist` | Video catalogue: ID, title, video file name, category |
+| `playlist` | Playlists owned by users |
+| `playitems` | Videos inside each playlist |
+| `images` | Uploaded profile pictures (stored as BLOBs) |
+
+## Project structure
+
+```
+index.php                 # Home / featured videos
+search.php                # Search & filter by category
+login.php, login_process.php, logout.php
+create_account.php, submitcreateaccount.php
+profile.php, profileAmend.php, updateprofile.php, upload.php
+mylibrary.php             # User's playlists & playlist details
+create_playlist.php, submitpl.php, deleteplaylist.php
+header.php, footer.php, dbinfo.php
+css/, js/, images/
+videos/                   # Vid1.mp4 … Vid24.mp4 (not included, see below)
+videodb.sql
+IPD_211354T_Wireframe/    # Desktop wireframes for every page
+```
+
+## Getting started
+
+1. Install XAMPP or WAMP (PHP + MySQL).
+2. Copy the folder into your web root (e.g. `htdocs/`).
+3. Import `videodb.sql` into MySQL.
+4. Check `dbinfo.php` (defaults: `localhost`, user `root`, no password, database `videodb`).
+5. Add your own MP4 files to `videos/` using the file names listed in the `masterlist` table.
+6. Open `http://localhost/<folder>/index.php`.
+
+## Limitations
+
+- Passwords are stored in plain text, and most queries are built by string concatenation, so they are vulnerable to SQL injection. These should be switched to `password_hash()` and prepared statements before any real use.
+- The video files (about 120 MB, mostly third-party game and music clips) are not included in this repository.
+
+## Author
+
+Valerie Tan Wan Xin – Nanyang Polytechnic, Infocomm & Media Engineering
