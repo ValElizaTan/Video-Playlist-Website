@@ -2,6 +2,12 @@
 
 A video-streaming style website where users can browse videos by category, search them, create an account and build their own playlists. Built with PHP and MySQL, together with Adobe Illustrator wireframes and a page-flow diagram, as an Interactive Product Design (IPD) project at Nanyang Polytechnic.
 
+## Demo
+
+https://github.com/user-attachments/assets/43218889-d4fa-424a-97fd-48fa242c7a25
+
+*Logging in, browsing and searching videos, and creating and managing playlists. (3:10)*
+
 ## Features
 
 - **Home:** a grid of featured videos you can play in the browser.
@@ -62,3 +68,4 @@ IPD_211354T_Wireframe/    # Desktop wireframes for every page
 ## Author
 
 Valerie Tan Wan Xin – Nanyang Polytechnic, Infocomm & Media Engineering
+
