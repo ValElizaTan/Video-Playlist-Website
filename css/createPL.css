@@ -1,0 +1,259 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.col {
+    background-color: whitesmoke;
+    padding: 5px;
+    margin: 5px;
+    border: 1px solid rgba(128, 128, 128, 0.5);
+    border-radius: 2em;
+}
+
+.itemtable {
+    padding: 10px;
+    font-size: small;
+    line-height: 2;
+    min-width: 90%;
+    margin: 0 auto;
+}
+
+th {
+    font-weight: bolder;
+}
+
+tr {
+    padding: 5px;
+}
+
+.items {
+    margin: 10px auto;
+    text-align: center;
+}
+
+.items table {
+    max-width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.items td:first-child {
+    padding: 5px;
+    width: 100px;
+}
+
+.items td:last-child {
+    padding: 5px;
+    width: 100px;
+}
+
+.itemname,
+.qty {
+    font-weight: bolder;
+}
+
+.price {
+    line-height: 2;
+}
+
+option {
+    text-align: center;
+}
+
+.button {
+    color: white;
+    padding: 8px 15px;
+    margin: 10px 20px;
+    background-color: #119696;
+    border: none;
+    border-radius: 10px;
+}
+
+.button:hover {
+    padding: 8px 15px;
+    margin: 15px;
+    border: none;
+    border-radius: 10px;
+    color: black;
+    background-color: mediumturquoise;
+    cursor: pointer;
+}
+
+.add_button {
+    color: white;
+    padding: 8px 15px;
+    margin: 15px;
+    background-color: #119696;
+    border: none;
+    border-radius: 15px;
+}
+
+.add_button:hover {
+    padding: 8px 15px;
+    margin: 15px;
+    border: none;
+    border-radius: 15px;
+    color: black;
+    background-color: paleturquoise;
+    cursor: pointer;
+}
+
+/* Style the playlist field */
+form.playlist input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    float: none;
+    width: 40%;
+    background: #ffffff;
+}
+
+/* Style the search field */
+form.example input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: none;
+    width: 40%;
+    height: 20%;
+    background: #ffffff;
+}
+
+/* Style the submit button */
+form.example button {
+    float: none;
+    width: 20%;
+    padding: 10px;
+    color: black;
+    font-size: 17px;
+    border-left: none;
+    /* Prevent double borders */
+    cursor: pointer;
+}
+
+form.example button:hover {
+    background: #0b7dda;
+    color: white;
+}
+
+/* Clear floats */
+form.example::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+
+@media screen and (min-width:768px) {
+    .grid-container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .example{
+        display: flex;
+        justify-content: end;
+    }
+
+    /* Style the playlist field */
+    form.playlist input[type=text] {
+        padding: 10px;
+        font-size: 17px;
+        border: 1px solid rgb(0, 0, 0);
+        border-radius: 10px;
+        float: none;
+        width: 40%;
+        background: #ffffff;
+    }
+
+    /* Style the search field */
+    form.example input[type=text] {
+        padding: 10px;
+        font-size: 17px;
+        border: 1px solid grey;
+        float: none;
+        width: 40%;
+        background: #ffffff;
+    }
+
+    /* Style the submit button */
+    form.example button {
+        float: none;
+        width: 20%;
+        padding: 10px;
+        background: #2196F3;
+        color: black;
+        font-size: 17px;
+        border: 1px solid grey;
+        border-left: none;
+        /* Prevent double borders */
+        cursor: pointer;
+    }
+
+    form.example button:hover {
+        background: #0b7dda;
+        color: white;
+    }
+
+    /* Clear floats */
+    form.example::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+}
+
+@media screen and (min-width:1440px) {
+    .grid-container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    /* Style the playlist field */
+    form.playlist input[type=text] {
+        padding: 10px;
+        font-size: 17px;
+        border: 1px solid rgb(0, 0, 0);
+        border-radius: 10px;
+        float: none;
+        width: 20%;
+        background: #ffffff;
+    }
+
+    /* Style the search field */
+    form.example input[type=text] {
+        padding: 10px;
+        font-size: 17px;
+        border: 1px solid grey;
+        float: none;
+        width: 20%;
+        background: #ffffff;
+    }
+
+    /* Style the submit button */
+    form.example button {
+        float: none;
+        width: 20%;
+        padding: 10px;
+        background: #2196F3;
+        color: black;
+        font-size: 17px;
+        border: 1px solid grey;
+        border-left: none;
+        /* Prevent double borders */
+        cursor: pointer;
+    }
+
+    form.example button:hover {
+        background: #0b7dda;
+        color: white;
+    }
+
+    /* Clear floats */
+    form.example::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+}

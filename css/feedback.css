@@ -1,0 +1,51 @@
+fieldset {
+    min-width: 260px;
+    margin: 10px auto;
+    width: 30%;
+    padding: 1rem;
+    background-color: #a015482f;
+    /*the color code can be expressed in #rrggbbtt in hex where tt is ff if 100% opaque */
+    border: 5px solid rgba(128, 128, 128, 0.3);
+    /*the color code can also be expressed in
+    rgba way where 0.3 is 30% opaque */
+    border-style: outset;
+    border-radius: 0.75rem;
+}
+
+input,
+textarea {
+    padding: 0.5rem;
+    margin: 3px;
+    border-radius: 0.75rem;
+}
+
+div[id$="_err"] {
+    /* selects all div with id that ends with _err */
+    /* https://www.w3schools.com/css/css_attribute_selectors.asp for more info */
+    /* we could have used name_err, email_err, mobile_err, comments_err, but it can be quite long. */
+    color: #a01548;
+    padding: 0.25rem;
+    font-size: 0.75rem;
+    font-style: italic;
+    font-weight: bold;
+    display: none;
+    /* initially hidden prior to validation */
+}
+
+@media screen and (min-width:320px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .grid-container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (min-width:1440px) {
+    .grid-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

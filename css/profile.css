@@ -1,0 +1,157 @@
+main {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    /*(implying all to be on 1 line)*/
+}
+
+main.fs1 {
+
+    flex: 1;
+    font-size: larger;
+    /* justify-content: left; */
+}
+
+#image {
+    align-items: center;
+    margin-left: 15px;
+
+}
+
+#display_image img {
+    margin: 30px;
+    width: 200px;
+    height: 200px;
+}
+
+main.fs2 {
+    padding: 15px;
+    margin: 10px;
+    flex: 1;
+    font-size: larger;
+    /* justify-content: right; */
+}
+
+.fs2 {
+    min-width: 260px;
+    margin: 10px auto;
+    width: 30%;
+    padding: 1rem;
+    background-color: #b18ff047;
+    /*the color code can be expressed in #rrggbbtt in hex where tt is ff if 100% opaque */
+    border: 5px solid rgba(7, 100, 98, 0.31);
+    /*the color code can also be expressed in
+    rgba way where 0.3 is 30% opaque */
+    border-style: outset;
+    border-radius: 0.75rem;
+}
+
+input,
+textarea {
+    padding: 0.5rem;
+    margin: 3px;
+    border-radius: 0.75rem;
+}
+
+#weather {
+    font-size: 0.7rem;
+    color: #a01548;
+}
+
+#h1{
+    padding: 5px;
+    margin: 2px;
+}
+
+div[id$="_err"] {
+    /* selects all div with id that ends with _err */
+    /* https://www.w3schools.com/css/css_attribute_selectors.asp for more info */
+    /* we could have used name_err, email_err, mobile_err, comments_err, but it can be quite long. */
+    color: #a01548;
+    padding: 0.25rem;
+    font-size: 0.75rem;
+    font-style: italic;
+    font-weight: bold;
+    display: none;
+    /* initially hidden prior to validation */
+}
+
+@media screen and (min-width:768px) {
+    .grid-container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    main {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        /*(implying all to be on 1 line)*/
+    }
+
+    main.fs1 {
+        flex: 1;
+        font-size: larger;
+        /* justify-content: left; */
+    }
+
+    main.fs2 {
+        padding: 15px;
+        margin: 10px;
+        flex: 1;
+        font-size: larger;
+        /* justify-content: right; */
+    }
+
+    .fs2 {
+        min-width: 260px;
+        margin: 10px auto;
+        width: 30%;
+        padding: 1rem;
+        background-color: #b18ff047;
+        /*the color code can be expressed in #rrggbbtt in hex where tt is ff if 100% opaque */
+        border: 5px solid rgba(7, 100, 98, 0.31);
+        /*the color code can also be expressed in
+        rgba way where 0.3 is 30% opaque */
+        border-style: outset;
+        border-radius: 0.75rem;
+    }
+}
+
+@media screen and (min-width:1440px) {
+    .grid-container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    main {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        /*(implying all to be on 1 line)*/
+    }
+
+    .fs1 {
+        flex: 1;
+        font-size: larger;
+        /* justify-content: left; */
+    }
+
+    .fs2 {
+        flex: 1;
+        font-size: larger;
+        /* justify-content: right; */
+    }
+
+    .fs2 {
+        min-width: 260px;
+        margin: 10px auto;
+        width: 30%;
+        padding: 1rem;
+        background-color: #b18ff047;
+        /*the color code can be expressed in #rrggbbtt in hex where tt is ff if 100% opaque */
+        border: 5px solid rgba(7, 100, 98, 0.31);
+        /*the color code can also be expressed in
+        rgba way where 0.3 is 30% opaque */
+        border-style: outset;
+        border-radius: 0.75rem;
+    }
+}

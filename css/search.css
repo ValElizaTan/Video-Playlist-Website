@@ -1,0 +1,199 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.col {
+    background-color: #f7d6e0;
+    padding: 5px;
+    margin: 5px;
+    border: 1px solid rgba(128, 128, 128, 0.5);
+    border-radius: 20%;
+}
+
+.itemtable {
+    color: white;
+    padding: 10px;
+    font-size: small;
+    line-height: 2;
+    min-width: 90%;
+    margin: 0 auto;
+}
+
+th {
+    font-weight: bolder;
+}
+
+tr {
+    padding: 5px;
+}
+
+.items {
+    margin: 10px auto;
+    text-align: center;
+}
+
+.items table {
+    max-width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.items td:first-child {
+    padding: 5px;
+    width: 100px;
+}
+
+.items td:last-child {
+    padding: 5px;
+    width: 100px;
+}
+
+option {
+    text-align: center;
+}
+
+.button {
+    color: white;
+    padding: 8px 15px;
+    margin: 15px;
+    background-color: #119696;
+    border: none;
+    border-radius: 15px;
+}
+
+.add_button {
+    color: white;
+    padding: 8px 15px;
+    margin: 15px;
+    background-color: #119696;
+    border: none;
+    border-radius: 15px;
+}
+
+/* Style the search field */
+form.example input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: none;
+    width: 40%;
+    background: #ffffff;
+}
+
+/* Style the submit button */
+form.example button {
+    float: none;
+    width: 20%;
+    padding: 10px;
+    background: #2196F3;
+    color: black;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none;
+    /* Prevent double borders */
+    cursor: pointer;
+}
+
+form.example button:hover {
+    background: #0b7dda;
+    color: white;
+}
+
+/* Clear floats */
+form.example::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+#itemtitle{
+    padding: 10px;
+    margin-top: 5px;
+}
+
+
+
+@media screen and (min-width:768px) {
+    .grid-container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /* Style the search field */
+    form.example input[type=text] {
+        padding: 10px;
+        font-size: 17px;
+        border: 1px solid grey;
+        float: none;
+        width: 40%;
+        background: #ffffff;
+    }
+
+    /* Style the submit button */
+    form.example button {
+        float: none;
+        width: 20%;
+        padding: 10px;
+        background: #2196F3;
+        color: black;
+        font-size: 17px;
+        border: 1px solid grey;
+        border-left: none;
+        /* Prevent double borders */
+        cursor: pointer;
+    }
+
+    form.example button:hover {
+        background: #0b7dda;
+        color: white;
+    }
+
+    /* Clear floats */
+    form.example::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+}
+
+@media screen and (min-width:1440px) {
+    .grid-container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    /* Style the search field */
+    form.example input[type=text] {
+        padding: 10px;
+        font-size: 17px;
+        border: 1px solid grey;
+        float: none;
+        width: 40%;
+        background: #ffffff;
+    }
+
+    /* Style the submit button */
+    form.example button {
+        float: none;
+        width: 20%;
+        padding: 10px;
+        background: #2196F3;
+        color: black;
+        font-size: 17px;
+        border: 1px solid grey;
+        border-left: none;
+        /* Prevent double borders */
+        cursor: pointer;
+    }
+
+    form.example button:hover {
+        background: #0b7dda;
+        color: white;
+    }
+
+    /* Clear floats */
+    form.example::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+}

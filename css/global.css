@@ -1,0 +1,226 @@
+/* mobile */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px auto;
+    min-width: 320px;
+    max-width: 1440px;
+    background-color: #caf0f8;
+}
+
+header,
+#main,
+footer {
+    margin: 10px auto;
+    text-align: center;
+}
+
+
+#main {
+    padding: 10px;
+}
+
+#menu {
+    justify-content: flex-end;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+}
+
+
+#logo{
+    margin: 20px;
+    display: inline-block;
+    justify-content: space-between;
+    width: 100px;
+    height: 100px;
+}
+
+#box{
+    width: 50%;
+}
+
+#menu li a {
+    box-shadow: inset 0 0 0 0 #4a80b5;
+    border-radius: 10px;
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding: 10px 10px;
+    margin: 0px 5px;
+    line-height: 1;
+    transition: color .2s ease-in-out, box-shadow .2s ease-in-out;
+}
+
+#menu li a:hover,
+#menu li a:active {
+    font-style: oblique;
+    color: white;
+    transition: all 0.25s;
+    box-shadow: inset 200px 0 0 0 #4a80b5;
+    letter-spacing: 2px;
+}
+
+a:hover{
+    font-style: italic;
+    letter-spacing: 1px;
+}
+
+h1,
+h2,
+h3 {
+    color: #119696;
+    text-align: center;
+    font-weight: bolder;
+}
+
+h1 {
+    margin: 15px 0px;
+    font-size: larger;
+}
+
+h2 {
+    margin: 15px 0px;
+    font-size: large;
+}
+
+h3 {
+    margin: 15px 0px;
+    font-size: medium;
+}
+
+p {
+    line-height: 1.5;
+    padding: 5px;
+}
+
+.button {
+    color: white;
+    padding: 8px 15px;
+    margin: 15px;
+    background-color: #119696;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.button:hover {
+    font-style: italic;
+    letter-spacing: 1px;
+    padding: 8px 15px;
+    margin: 15px;
+    border: none;
+    border-radius: 10px;
+    color: black;
+    background-color: paleturquoise;
+    cursor: pointer;
+}
+
+.disabled {
+    background-color: #e0dbdd;
+}
+
+.rightalign {
+    text-align: right;
+}
+
+.leftalign {
+    text-align: left;
+}
+
+/* Start of Hamburger */
+nav label {
+    display: inline-block;
+    width: 100%;
+    color: black;
+    font-size: 30px;
+    text-align: right;
+    padding: 10px;
+}
+
+#hamburger {
+    display: none;
+}
+
+#menu {
+    display: none;
+}
+
+nav input:checked~#menu {
+    display: flex;
+}
+
+/* End Hamburger */
+
+
+/* Tablet Screen */
+@media screen and (min-width:768px) {
+
+    #logo {
+        margin: 20px;
+        display: flex;
+        justify-content: flex-start;
+        width: 135px;
+        height: 135px;
+    }
+
+    #box{
+        width: 25%;
+    }
+
+    /* Navbar is default column, changes to row when >= 480px */
+    #menu {
+        border-bottom: 2px solid black;
+        padding: 10px;
+        margin: 5px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    #menu li a {
+        border-top: none;
+    }
+
+    /* Hide hamburger */
+    nav label,
+    #hamburger {
+        display: none;
+    }
+}
+
+/* Laptop screen */
+@media screen and (min-width:1440px) {
+
+    #logo {
+        margin: 20px;
+        display: flex;
+        justify-content: flex-start;
+        width: 150px;
+        height: 150px;
+    }
+
+    #box{
+        width: 14%;
+    }
+
+    /* Navbar is default column, changes to row when >= 480px */
+    #menu {
+        border-bottom: 2px solid black;
+        padding: 10px;
+        margin: 5px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    #menu li a {
+        border-top: none;
+        font-size: 20px;
+    }
+
+    /* Hide hamburger */
+    nav label,
+    #hamburger {
+        display: none;
+    }
+
+}

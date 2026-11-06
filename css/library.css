@@ -1,0 +1,138 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.masterinfo {
+    background-color: #fffcff;
+    align-self: right;
+}
+
+.detailsinfo {
+    background-color: #fffcff;
+}
+
+.col {
+    padding: 5px;
+    margin: 5px;
+    border: 5px solid #d4adcf;
+    background-color: #03045e;
+    align-items: center;
+    border-style: groove;
+    border-radius: 1rem;
+}
+
+.itemtable {
+    padding: 10px;
+    font-size: small;
+    line-height: 2;
+    min-width: 90%;
+    margin: 0 auto;
+}
+
+th {
+    text-decoration-line: underline;
+    text-decoration-style: double;
+    font-size: larger;
+    color: azure;
+}
+
+tr {
+    padding: 10px;
+}
+
+option {
+    text-align: center;
+}
+
+td {
+    text-align: center;
+}
+
+a:link {
+    color: white;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+    color: white;
+}
+
+/* mouse over link */
+a:hover {
+    color: #ffd972;
+    font-style: oblique;
+    letter-spacing: 3px;
+    text-decoration: underline;
+}
+
+/* selected link */
+a:active {
+    color: #d4adcf;
+}
+
+#vid video {
+    padding: 5px;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    width: 270px;
+    height: 210px;
+}
+
+#delete{
+    padding: 25px;
+}
+
+#delete a:link {
+    padding: 5px;
+    margin: 5px;
+    color: white;
+    background-color: #119696;
+    border-radius: 15px;
+}
+
+#delete a:hover {
+    padding: 5px;
+    margin: 5px;
+    color: black;
+    background-color: paleturquoise;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+@media screen and (min-width:768px) {
+    .grid-container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #vid video {
+        padding: 5px;
+        margin: 5px;
+        display: flex;
+        align-items: center;
+        width: 430px;
+        height: 270px;
+    }
+
+}
+
+@media screen and (min-width:1440px) {
+    .grid-container {
+        grid-template-columns: repeat(3, 1fr);
+        align-content: center;
+    }
+
+    #vid video {
+        padding: 5px;
+        margin: 5px;
+        display: flex;
+        align-items: center;
+        width: 530px;
+        height: 340px;
+    }
+}
